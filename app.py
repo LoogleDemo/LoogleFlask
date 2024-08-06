@@ -3,10 +3,11 @@ from sentence_transformers import SentenceTransformer, util
 import google.generativeai as genai
 import PIL.Image
 import pandas as pd
+import os
 #변경 필요
-import config
-GEM_API_KEY = config.GEM_API_KEY
-# GEM_API_KEY = os.getenv("GEM_API_KEY")
+# import config
+# GEM_API_KEY = config.GEM_API_KEY
+GEM_API_KEY = os.getenv("GEM_API_KEY")
 
 
 genai.configure(api_key=GEM_API_KEY)
